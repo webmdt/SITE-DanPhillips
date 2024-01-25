@@ -1,0 +1,16 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+vendor/*
+.env
+.idea/Site-Strawhat.iml
+.idea/blade.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml

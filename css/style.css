@@ -1,0 +1,148 @@
+html {
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+}
+body {
+	background-color: #201e20;
+}
+/********************* 
+*
+*  Headings
+*
+**********************/
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Abril Fatface', cursive;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-size: 90px;
+}
+h1, h2 {
+	color: #2ae49b;
+	font-weight: 400;
+}
+h2 {
+	font-size: 55px;
+}
+h3 {}
+h4 {}
+h5 {}
+h6 {
+	font-family: Helvetica;
+	font-size: 22px;
+	font-weight: 300;
+	color: #fff;
+	/* letter-spacing: -1px; */
+	margin: 18px 0;
+}
+/********************* 
+*
+*  Column Definitions
+*
+**********************/
+
+.one-col {}
+.two-col-left {}
+.two-col-right {}
+.one-col-large {}
+/********************* 
+*
+*  Misc Stylings
+*
+**********************/
+
+.break {
+	display: block;
+}
+.bg-dark p {
+	font-family: Helvetica;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+	/* letter-spacing: -1; */
+	color: #fff;
+}
+.bg-dark p a {
+	color: inherit;
+	text-decoration: none;
+	text-transform: none;
+	border-bottom: 1px solid #2ae49b;
+}
+.bg-dark p a:hover {
+	color: #fff;
+}
+.bg-dark button {
+	/* padding: 12px 28px; */
+	background: none;
+	color: #aeaeae;
+	outline: none;
+	border: 4px solid #2ae49b;
+	border-radius: 50px;
+	transition: .15s border ease-in-out;
+	height: 50px;
+	width: 160px;
+}
+.bg-dark button:hover {
+	border-width: 6px;
+}
+/********************* 
+*
+*  Sections
+*
+**********************/
+
+#sec_intro {
+	top: 15%;
+	position: absolute;
+	padding: 70px;
+}
+#sec_intro p {
+	margin-bottom: 30px;
+}
+/*
+#sec_intro p span {
+	-webkit-user-select: all;
+	-moz-user-select: all;
+	-ms-user-select: all;
+	user-select: all;
+} */
+
+#sec_intro h1::selection, #sec_intro h2::selection, #sec_intro h6::selection, #sec_intro p::selection, #sec_intro p a::selection, #sec_intro p span::selection {
+	background: rgba(42, 228, 155, .3);
+}
+#sec_intro h1::-moz-selection, #sec_intro h2::-moz-selection, #sec_intro h6::-moz-selection, #sec_intro p::-moz-selection, #sec_intro p a::-moz-selection, #sec_intro p span::-moz-selection {
+	background: rgba(42, 228, 155, .3);
+}
+/********************* 
+*
+*  Mobile
+*
+**********************/
+
+@media all and (max-width: 500px) {
+	h1 {
+		line-height: 100px;
+	}
+	h2 {
+		line-height: 55px;
+	}
+	h6 {
+		font-size: 25px;
+	}
+	.break {
+		clear: both;
+		display: inline;
+	}
+	.bg-dark p {
+		font-size: 19px;
+	}
+	#sec_intro {
+		top: auto;
+		position: absolute;
+		padding: 15px;
+	}
+}
